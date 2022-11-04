@@ -1,0 +1,3 @@
+qro|mexico|650*cdmx,100,gdl,600;
+cdmx|mexico|5000*qro,100,gdl,500;
+gdl|mexico|1000*qro,600,cdmx,500;
