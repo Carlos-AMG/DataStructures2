@@ -1,0 +1,1 @@
+C++ hash table code. It will store values (Students) in a binary file by using indexes, in case of any collision it will map the key to a new index.
