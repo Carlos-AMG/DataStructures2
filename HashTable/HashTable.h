@@ -10,16 +10,19 @@ public:
     int size;
     // int index;
     double percentage;
-    std::vector <bool> vect;
+    std::vector <int> vect;
     
     HashTable();
     HashTable(int size1);
     int __hash(std::string key);
+    int getIndex(std::string key);
     void printTable();
-    void setItem(std::string key, std::string className, std::string name); //Key es el passwd
-    void setItem2(std::string key, std::string className, std::string name); 
-    void writeItem(int index, std::string key, std::string className, std::string name, std::fstream & output);
-    Student getItem(std::string key, bool flag = true);
+    void setItem(std::string key, std::string className, std::string name); 
+    void modifyItem(int index, std::string passwd, std::string className, std::string name);
+    void removeItem(std::string key);
+    void writeItem(int index, std::string key, std::string className, std::string name);
+    void writeItem(int index);
+    Student getItem(std::string key);
     //helpers, will help with collisions
     void calcPercentage();
     void doubleTable();
